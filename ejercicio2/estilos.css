@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Diplomata+SC&family=Ewert&family=Frijole&family=Indie+Flower&family=McLaren&family=Open+Sans:wght@300&family=Pacifico&family=Roboto:ital,wght@0,100;0,400;1,300&family=Vast+Shadow&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+
+h1{
+    text-align: center;
+    font-family: 'Vast Shadow';
+    text-decoration: underline;
+}
+
+fieldset{
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px grey;
+    background-color: beige;
+    font-size: 1.2rem;
+    font-family: 'mclaren';
+}
+
+/* Estilos de las textos del formulario */
+#formu label{
+    font-family: 'mclaren';  
+    margin-right: 10px;
+}
+
+/* Estilos de los select para elegir */
+#formu select{
+    width: 150px;
+    box-shadow: 4px 4px 4px grey;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'mclaren';
+    margin-left: 10px;
+}
+
+#formu .monu{
+    width: 250px;
+}
+
+/* Estilos del botón */
+input[type='submit'], fieldset a{
+    width: 100px;
+    margin-top: 50px;
+    box-shadow: 4px 4px 4px grey;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'mclaren';
+    font-weight: bold;
+    
+}
+
+fieldset a{
+   text-decoration: none;
+   text-align: center;
+   background-color: lavender;
+   font-family: 'mclaren';
+   color: #000;
+   font-size: 15px;
+   display: inline-block;
+   float: right;
+  
+}
+
+
+
+input[type='submit']:hover, fieldset a:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+legend{
+    margin-left: 10px;
+    font-family: 'mclaren';
+}
+
+
+.resul {
+    background-color: lightpink;
+    width: 600px;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-family: 'mclaren';
+    box-shadow: 4px 4px 4px grey;
+}
+
+/* Esconde los select de los monumentos */
+.hide{
+    display: none;
+}
+
+
+/* clase que se aplica al haber un error */
+.error span{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Vast Shadow';
+
+    animation: blinker 1s linear infinite;
+}
+
+
+/* Centra el texto de título en el div resul */
+.cor{
+    text-align: center;
+}
+
+/* Div donde se muestra las imagenes */
+#img{
+    width: 600px;
+    border-radius: 5px;
+    margin-left: 620px;
+    margin: 40px auto;
+    box-shadow: 4px 4px 4px grey;
+    
+    display: flex;
+    
+}
+
+/* imagen */
+img{
+    width: 600px;
+    height: 300px; 
+    border-radius: 5px;
+   
+    
+}
+
+
+/* animación parpadeante */
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+

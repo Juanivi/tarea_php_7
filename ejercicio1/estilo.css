@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Diplomata+SC&family=Ewert&family=Frijole&family=Indie+Flower&family=McLaren&family=Open+Sans:wght@300&family=Pacifico&family=Roboto:ital,wght@0,100;0,400;1,300&family=Vast+Shadow&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+/* Estilos de la página */
+body{
+    display: grid;
+    grid-row: 1fr 1fr;
+    gap: 50px;
+ }
+ 
+ h1{
+     text-align: center;
+     font-family: 'Vast Shadow';
+     text-decoration: underline;
+   
+ }
+
+
+ /* Estilos del formulario */
+ #formu{
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: burlywood;
+
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+
+/* Estilos de las textos del formulario */
+label{
+    font-family: 'mclaren';
+    
+}
+
+/* Estilos de los select para elegir */
+#formu select{
+    width: 100px;
+    box-shadow: 4px 4px 4px grey;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* El 4 hijo del formulario*/
+#formu select:nth-child(4){
+    grid-column: 2/3;
+}
+
+/* Estilos de la caja para escribir el código*/
+#formu textarea{
+    grid-column: 1/3;
+    justify-content: center;
+    box-shadow: 4px 4px 4px grey;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* El 7 hijo del formulario */
+#formu label:nth-child(7){
+    margin-top: 50px;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+/**/
+#formu input[type='checkbox']{
+    box-shadow: 4px 4px 4px grey;
+    margin-left: 60px;
+}
+
+/* Estilos del botón */
+input[type='submit'], #formu a{
+    grid-column: 1/3;
+    width: 100px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 4px grey;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    background-color: lavender;
+}
+
+#formu a{
+   text-decoration: none;
+   text-align: center;
+   background-color: lavender;
+   font-family: 'mclaren';
+   color: #000;
+   font-size: 1em;
+   
+}
+
+input[type='submit']:hover, #formu a:hover{
+    background-color: #000;
+    color: #FFF;
+}
+
+
+
+
+/* Estilos del div donde muestra la información */
+.resul{
+    margin: 0 auto;
+    padding: 10px;
+    /*width: 420px;*/
+    border: 1px solid black;
+    border-radius: 5px;
+    align-self: flex-end;
+    grid-row: 3/4;
+}
+
+
+/* clase que se aplica al haber un error */
+/*.error{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Vast Shadow';
+    animation: blinker 1s linear infinite;
+}*/
+
+.error span{
+    color: red;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Vast Shadow';
+
+    animation: blinker 1s linear infinite;
+}
+
+
+
+/* animación parpadeante */
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}

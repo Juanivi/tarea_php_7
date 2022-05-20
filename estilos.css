@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Diplomata+SC&family=Ewert&family=Frijole&family=Indie+Flower&family=McLaren&family=Open+Sans:wght@300&family=Pacifico&family=Roboto:ital,wght@0,100;0,400;1,300&family=Vast+Shadow&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+   
+}
+
+h1{
+    font-family: 'Black Ops One';
+    text-align: center;
+    text-decoration: underline;
+}
+
+.menu{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+ 
+}
+
+a{
+    margin-top: 10px;
+    width: 150px;
+    text-decoration: none;
+    font-family: 'Black Ops One';
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px grey;
+    padding: 5px 20px;
+    background-color: silver;
+    font-weight: bold;
+    color: #000;
+}
+
+a:hover{
+    background-color: #000;
+    color: #FFF;
+}
